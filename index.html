@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,42 +12,31 @@
     <title>My Professional Portfolio</title>
     <link rel="shortcut icon" href="./assets/images/IMG_20220519_041352.jpg">
 </head>
+
 <body>
     <header>
-        <span class="background"> <!-- Class for title background -->
-            <h1>My Portfolio</h1>
-        </span>
+        <h1>My Portfolio</h1>
         <nav>
-            <ul class="nav">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="./assets/docs/Anthony De Filippis Resume (New).pdf" download>Resume</a>
-                </li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/docs/Anthony De Filippis Resume (New).pdf" download>Resume</a>
         </nav>
     </header>
 
-    <main></main>
     <section class="hero">
         <div class="hero-title">
-                <span class="background">Antonio De Filippis</span>
+            <h2>Antonio De Filippis</h2>
         </div>
     </section>
 
-    <article> 
+    <main> 
         <div id="about-me" class="about-me-wrapper">
             <div class="about-me-grid-container">
                 <div class="about-me-item about-me-title">
-                    <p> About</p>
+                    <p>About</p>
                 </div>
+
                 <div class="about-me-item p1">
                     <p>I have strong work ethics and an ability to lead a team. I have knowledge in C, C
                         Sharp, C++, Visual Basic, Java, HTML, Android Operating System, Microsoft
@@ -63,79 +53,73 @@
                         My ability to pick up on things and take charge with new and old items learned is
                         extremely well.</p>
                 </div>
+
                 <div class="about-me-item p2">
                     <p>I am currently working as a bartender and IT Specialist at The Shack Tiki Bar and Restaurant.</p>
                 </div>  
             </div>
         </div> 
-    </article>
+    </main>
 
-    <seection class="content">
-        <div id="project" class="project-wrapper">
-            <div class="project-grid-container">
-                <div class="project-item project-title">
-                    <p>Projects</p>
+    <section class="content">
+        <div id="project" class="about-me-wrapper">
+            <div class="about-me-grid-container">
+                <p>Projects</p>
+            </div>
+
+            <article id="project-one">
+                <h3>Horiseon Website</h3>
+                <div onclick="projectClicked('module-one')" alt="Image of Horiseon Website" title="Horiseon Website" target="_blank" style="cursor: crosshair;" class="project-item-project module-one"></div>
+                    <p>
+                        The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                    </p>
                 </div>
-
-                <div onclick="projectClicked('module-one')" alt="Image of Horiseon Website" title="Horiseon Website" target="_blank" style="cursor: crosshair;" class="project-item-project module-one">
-                    <!--<span class="background">
-                        <h3>Horiseon Website</h3>
-                        <span class="lower-text">HTML/CSS</span>
-                    </span>-->
-
-
-                    <article id="project-one">
-                        <h2>Search Engine Optimization</h2>
-                        <p>
-                            The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-                        </p>
-                    </article>
-                </div>
-
-                <div onclick="projectClicked('two')" alt="Ima0ge Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="project-item-project run-buddy">
-                    <span class="background">
-                        <h3>Run Buddy</h3>
-                        <span class="lower-text">HTML/CSS</span>
-                    </span>
-                </div>
-
-                <div onclick="projectClicked('three')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="project-item-project password-generator">
-                    <span class="background">
-                        <h3>Password Generator</h3>
-                        <span class="lower-text">CSS/Javascript</span>
-                    </span>
-                </div>
-
-                <div onclick="projectClicked('four')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="project-item-project web-api-code-quiz">
-                    <span class="background">
-                        <h3>Web API Code Quiz</h3>
-                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
-                    </span>
-                </div>
-
-                <div onclick="projectClicked('five')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="project-item-project work-day-scheduler">
-                    <span class="background">
-                        <h3>Work Day Scheduler</h3>
-                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
-                    </span>
-                </div>
-
-                <div onclick="projectClicked('six')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="project-item-project project01-group07">
-                    <span class="background">
-                        <h3>Project01 Group07</h3>
-                        <span class="lower-text">HTML/CSS/Javascript</span>
-                    </span>
-                </div>
+            </article>
                 
-                <div class="project-item-project ghost-item">
-                    <span class="background">
-                        <h3>Coming soon!</h3>
-                        <span class="lower-text">TBD</span>
-                    </span>
-                </div>
+
+            <div onclick="projectClicked('two')" alt="Ima0ge Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="project-item-project run-buddy">
+                <span class="background">
+                    <h3>Run Buddy</h3>
+                    <span class="lower-text">HTML/CSS</span>
+                </span>
+            </div>
+
+            <div onclick="projectClicked('three')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="project-item-project password-generator">
+                <span class="background">
+                    <h3>Password Generator</h3>
+                    <span class="lower-text">CSS/Javascript</span>
+                </span>
+            </div>
+
+            <div onclick="projectClicked('four')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="project-item-project web-api-code-quiz">
+                <span class="background">
+                    <h3>Web API Code Quiz</h3>
+                    <span class="lower-text">Javascript/CSS/LocalStorage</span>
+                </span>
+            </div>
+
+            <div onclick="projectClicked('five')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="project-item-project work-day-scheduler">
+                <span class="background">
+                    <h3>Work Day Scheduler</h3>
+                    <span class="lower-text">Dynamic Javascript/Bootstrap</span>
+                </span>
+            </div>
+
+            <div onclick="projectClicked('six')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="project-item-project project01-group07">
+                <span class="background">
+                    <h3>Project01 Group07</h3>
+                    <span class="lower-text">HTML/CSS/Javascript</span>
+                </span>
+            </div>
+                
+            <div class="project-item-project ghost-item">
+                <span class="background">
+                    <h3>Coming soon!</h3>
+                    <span class="lower-text">TBD</span>
+                </span>
             </div>
         </div>
-    </content>
+    </section>
 
     <footer>
         <div id="contact-me" class="footer-wrapper">

@@ -17,21 +17,17 @@ header{
 }
 
 header h1{
-  padding-left: 50px;
-  color: white;
-}
-
-header nav ul{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  color: white;
   align-items: center;
-  list-style: none;
-  padding-right: 0px;
-  line-height: 1.6;
+  font-size: 1.8vw;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-header nav ul li{
+header nav{
+  line-height: 1.6;
   font-size: 1.8vw;
   padding: 10px 15px;
   margin-top: 5px;
@@ -39,8 +35,8 @@ header nav ul li{
 }
 
 header a{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 25px;
+  padding-right: 15px;
   padding-bottom: 5px;
   text-decoration: none;
   color: white;
@@ -61,6 +57,7 @@ body{
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
+  width: 800px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0072bb;
   color: #ffffff;
@@ -98,21 +95,21 @@ footer a{
   text-shadow: 0px 0px 20px var(--lightskyblue);
 }
 
-.project-grid-container div:hover{
+.project-grid-container div:hover {
   mix-blend-mode: color-burn;
 }
 
-.project-grid-container.project-item-project.ghost-item:hover{
+.project-grid-container.project-item-project.ghost-item:hover {
   opacity: 0;
 }
 
-.footer-container a:hover{
+.footer-container a:hover {
   color: var(--lightskyblue);
   font-weight: bold;
   text-shadow: 0px 0px 20px var(--lightskyblue);
 }
 
-.hero{
+.hero {
   height: 425px;
   background-image: url("../images/1f4638addc8c0c377a8e69901c953582.jpg");
   border-bottom-left-radius: 30px 30px;
@@ -126,25 +123,27 @@ footer a{
   align-items: flex-end;
 }
 
-.hero-title{
-  font-size: 150px;
+.hero-title {
+  line-height: 1.6;
+  margin-bottom: 100px;
+  padding-bottom: 5px;
+  font-size: 100px;
   color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 5px;
-  font-weight: bolder;
   padding-right: 150px;
 }
 
-.about-me-wrapper{
-  display: flex;
+.about-me-wrapper {
+  /*display: flex;*/
   flex-wrap: wrap;
   justify-content: space-between;
-  justify-content: center;
+  /*justify-content: center;*/
   margin-top: 50px;
 }
 
 .about-me-grid-container{
-  width: 80%;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr);
   grid-template-rows: repeat(4, 1fr);
@@ -152,12 +151,12 @@ footer a{
 }
 
 .about-me-item.about-me-title{
-  padding-top: 0px;
+  /*padding-top: 0px;*/
   font-size: 35px;
-  grid-row: 1 / span 4;
+  /*grid-row: 1 / span 4;*/
   padding-right: 10px;
-  text-align: right;
-  border-right: 2px solid var(--about-me-project-border);
+  text-align: center;
+  /*border-right: 2px solid var(--about-me-project-border);*/
 }
 
 .about-me-item.p1{
